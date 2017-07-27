@@ -4,18 +4,13 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 
-# generate eskymap from dat
-from eskytools import regen_map
-regen_map.main()
-
 setup(
-    name='uni2esky',
-    version='1.0.3',
+    name='hexprint',
+    version='0.0.1',
 
-    description='''Utilities for inspecting unknown code pages of printers or terminals and for interfacing with the Esky POS-58 printer specifically.''',
-    # rst is some bull shit and i will not be party to it. markdown or die
-    long_description='https://github.com/9999years/uni2esky/blob/master/readme.md',
-    url='https://github.com/9999years/uni2esky',
+    description='''A utility for printing raw bytes to the console or converting a string like `1b 20 f9` or `1B20F9` into the bytes b'\x1b\x20\xf9'.''',
+    long_description='https://github.com/9999years/hexprint',
+    url='https://github.com/9999years/hexprint',
     author='Rebecca Turner',
     author_email='637275@gmail.com',
     license='MIT',
@@ -24,7 +19,7 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3',
         'Intended Audience :: Developers',
         'Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator',
         'Topic :: Utilities',
